@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0px 300px 0px 300px;
+            font-family:sans-serif;
+        }
+        #upper{
+            text-align: center;
+        }
+        #flex{
+            display:flex;
+            justify-content:space-between;
+        }
+        #flex1{
+            display:flex;
+        }
+        #center{
+            text-align: center;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+        #center1{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            padding-top: 25px;
+            background-image: url("img.jpg");
+        }
+        #sub1{
+            padding:0px 50px 0px 50px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        }
+        #sub2{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            text-align: center;
+            
+            margin-top:30px;
+            gap:50px
+            
+        }
+        .i2{
+            height:50px
+        }
+        #i1{
+            height:18px;
+            margin-top: 22px;;
+        }
+        button{
+            background-color:black;
+            color:white;
+            text-align:center;
+            margin-top:10px;
+        }
+        .grey{
+            color:grey;
+            font-size:12px;
+        }
+        .font12{
+            font-size:12px;
+        }
+        .font14{
+            font-size:14px;
+        }
+        .font16{
+            font-size:16px;
+        }
+        .font21{
+            font-size:21px;
+        }
+        #hr1{
+            width:90%;
+            color:rgb(231, 225, 225)
+        }
+    </style>
+</head>
+<body>
+        <div id="upper">
+            <p class="font12">HOME/<strong>ORDER CONFIRMATION</strong></p>
+        </div>
+        <hr></hr>
+        <div id="main">
+                <div id="sub1">
+                    <div id="flex">
+                        <div id="flex1">
+                            <img id="i1" src="https://www.myglamm.com/images/img-order-confirm.png">
+                            <p class="font21">ORDER PLACED!</p>
+                        </div>
+                        <div>
+                            <button>VIEW OR MANAGE ORDER</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font16">Thanks for shopping! Your Order MyGlamm SUPERFOODS Blueberry & Strawberry Face Cream 50g & 1 more items been sent for packaging and shipping. We will notify you once the order is shipped.</p>
+                        <p class="grey">EXPECTED DELIVERY DATE:</p>
+                        <p class="font14"><strong>MyGlamm SUPERFOODS Blueberry & Strawberry Face Cream 50g + 1 more</strong></p>
+                        <p class="font14">9th Apr, 2022</p>
+                    </div>
+                    
+                </div>
+                <div id="sub2">
+                    <div id="center">
+                        <p class="font14"><strong>YOU JUST EARNED*</strong></p>
+                        <h1>41</h1>
+                        <p class="font16"><strong>Good Points</strong></p>
+                        <p class="font16">1 Good Points = ₹1</p>
+                        <hr id="hr1"></hr>
+                        <p class="grey">*Will be credited on delivery</p>
+                    </div>
+                    <div id="center1">
+                        <h2>Share your way to free makeup</h2>
+                        <p class="font14">START REFERRING</p>
+                        <div>
+                            <img class="i2" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-128.png">
+                            <img class="i2" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png" >
+                            <img class="i2" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRIohjsmGRd9wu8vC17VVGSPnmOAFTX7JKuuIahNy9eSiL6d3x">
+                        </div>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>

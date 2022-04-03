@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./makeup.css" />
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+</head>
+
+<body>
+    <div id="nav">
+
+    </div>
+    <div id="makeupproductDiv">
+        <!-- <hr id="makeupproductDiv1"> -->
+            <p style="font-size: 15px;">HOME/<strong>MAKEUP</strong></p>
+            <hr></hr>
+            <div class="skincareheading"><h1 >MAKEUP</h1></div>
+            <!-- <h1><strong>MAKEUP</strong></h1> -->
+        </div>
+        <div id="makeupproductDiv2"></div>
+    </div>
+</div>
+
+<div id="foot"></div>
+
+</body>
+</html>
+<script src="./makeup.js"></script>
+<script src="./makeupdata.js"></script>
+
+<script type="module">
+
+    import  navbar  from "./navbar.js"
+        console.log(navbar)
+    
+        let navb = document.getElementById("nav")
+        navb.innerHTML = navbar()
+    
+        import footer from "./footer.js"
+        console.log(footer)
+    
+        let foot = document.getElementById("foot")
+        foot.innerHTML = footer()
+    
+    </script>
+

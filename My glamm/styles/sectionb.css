@@ -1,0 +1,101 @@
+.secbBox>img{
+    height:281.06px;
+    width:1024px;
+    /* padding-left:25%; */
+    margin:0px 167.5px 20px; 
+}
+.secbHeading{
+    margin: 2.5rem auto 2.5rem;
+    font-weight: 600;
+    width: max-content;
+    padding: 0px 5px;
+    font-size: 24px;
+}
+.secbfirstContainer{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    margin: auto auto 2.5rem;
+}
+.secbfirstContainer>div{
+/* border:2px solid black */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height:242.03px;
+}
+
+.secbfirstContainer img{
+    height:242.03px;
+    width:347.19px;
+}
+.secb_image{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.secbImage{
+    position:relative;
+}
+.centered {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1.6rem 0;
+    position: absolute;
+    width:100%;
+    height:40%;
+    top: 75.5%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    background: rgba(245, 237, 237, 0.836);/* Black background with opacity */
+    padding-top: 10px;
+    }
+    .image_overlay{
+        position: absolute;
+        top:20%;
+        left:0;
+        width:100%;
+        height:80%;
+        background: rgba(245, 237, 237, 0.397);/* Black background with opacity */
+        color:black;
+        font-family: 'Quicksand',sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+     }
+     .image_overlay--blur{
+         backdrop-filter: blur(5px) ;
+     }
+     .image_overlay >*{
+         transform: translateY(20px);
+         transition: transform 0.25s;
+     }
+     .image_overlay:hover{
+       opacity: 1;
+     }
+     .image_overlay:hover>*{
+         transform: translateY(0);
+     }
+     .image_title{
+         font-size:1.4rem;
+         font-family:sans-serif;
+         /* padding-left:40px */
+         font-weight: 600;
+         margin: 1.6rem 0;
+         text-align: center;
+         color:inherit;
+         font-family: inherit;
+     }
+     .image_description{
+         font-size:16px;
+         margin-top:10px;;
+         /* padding:0px 40px; */
+         text-align: center;
+         color:inherit;
+         font-family: inherit;
+     }

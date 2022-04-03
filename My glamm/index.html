@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./login.css" >
+   <link rel="stylesheet" href="./otp.css" >
+   
+   <style>
+ #a {
+            background-color: rgb(254, 232, 232);
+            /* width: 100%;
+            height:40px; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #a1 {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #a3 {
+            /* display: flex; */
+            /* height: 480px; */
+            /* border: 1px solid red; */
+            width: 80%;
+            margin: auto;
+            /* padding: 20px; */
+            /* overflow: scroll; */
+            /* justify-content: space-around; */
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        #a4 {
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            /* border: 1px solid red; */
+            /* overflow: scroll; */
+        }
+
+        #a5 {
+            display: flex;
+        }
+
+        #b:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b1:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b2:hover {
+            color: rgb(236, 87, 76)
+        }
+        #b3:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b4:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b5:hover {
+            color: rgb(236, 87, 76)
+        }
+        #b6:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b7:hover {
+            color: rgb(236, 87, 76)
+        }
+
+        #b8:hover {
+            color: rgb(236, 87, 76)
+        }
+        
+
+        .a1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .a2 {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30px;
+        }
+
+        .a3 {
+            margin-top: 5px;
+            font-weight: bolder;
+            margin-top: 15px;
+            color: rgb(252, 168, 150);
+        }
+
+        .a4 {
+            margin-top: 7px;
+            margin-right: 5px;
+        }
+
+        .a5 {
+            margin-top: 5px;
+        }
+
+        .a6 {
+            background-color: rgb(245, 245, 246);
+            border: 2px solid rgb(245, 245, 246);
+            margin-left: 40px;
+            border-radius: 5px;
+            width: 350px;
+            height: 45px;
+            display: flex;
+            width: 60%;
+        }
+
+        .a8 {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+
+        .a7 {
+            background-color: rgb(245, 245, 246);
+            border-style: none;
+            font-size: 18px;
+            outline: none;
+            width: 80%;
+        }
+
+        .a9 {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+        }
+
+        .a10 {
+            width: 60%;
+            display: flex;
+            margin-left: 150px;
+        }
+
+        .a11 {
+            width: 20%;
+            display: flex;
+            margin-right: 220px;
+        }
+
+        #a12 {
+            margin-left: 30px;
+        }
+
+        .a13 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* new pweson */
+
+         #firstimage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+            /* height: 527px; */
+            /* margin-top:160px; */
+            
+        } 
+        #secimage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: black;
+        }
+        #row1{
+            justify-content: center;
+            display:grid;
+            grid-template-rows: repeat(1,150px);
+            grid-template-columns: repeat(3,350px);
+            grid-gap:10px;
+          
+        }
+        #row1>div{
+            margin:20px;
+            grid-gap:20px;
+            box-shadow:0px 7px 10px rgba(0,0,0,0.5);
+        }
+        #row2{
+            justify-content: center;
+            display:grid;
+            grid-template-rows: repeat(1,250px);
+            grid-template-columns: repeat(3,350px);
+            grid-gap:10px;
+          
+        }
+        #row2>div{
+            margin:20px;
+            grid-gap:20px;
+           box-shadow:0px 7px 10px rgba(0,0,0,0.5);
+           transition:0.5s ease-in-out;
+        }
+        #row1>div:hover{
+            transform:translateY(-60px);
+            width:100%;
+            height:200px;
+      
+        }
+        /* #innerbox:before{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0; 
+            display:block;
+            background:linear-gradient(to bottom,rgba(230, 235, 234, 0.5),rgb(247, 248, 245));
+            width: 100%;
+            height:180px;
+            transform: translateY(-5px);
+            z-index: 2;
+            transition:0.5s all;
+            opacity:1;
+        } */
+        #row1 img{
+            width:100%;
+            height:100%;
+        }
+        #row2 img{
+            width:100%;
+            height:100%;
+         }
+         #innerbox h3{
+             position:relative;
+             z-index: 3;
+             color: #000000;
+             opacity: 1;
+             transform: translateY(-55px);
+             transition: 0.5s all;
+             text-align: center;
+             background-color: rgb(236, 234, 234);
+             font-size:155%;
+         }
+         #innerbox:hover{
+             transform:scale(1.3);
+             z-index: 2;
+             cursor:pointer;
+        }
+        #row1header{
+            width:30%;
+            height:25px;
+            font-size: 100%;
+            margin:auto;
+            /* padding:3px; */
+            background:linear-gradient(to bottom,rgb(236, 87, 76),#f8f7f7);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #row2header{
+            width:20%;
+            height:25px;
+            font-size: 100%;
+            margin:auto;
+            /* padding:3px; */
+            background:linear-gradient(to bottom,rgb(236, 87, 76),#f8f7f7);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* new person */
+ .secbBox>img{
+    height:281.06px;
+    width:60%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    /* margin: auto; */
+    /* padding-left:12%; */
+    /* margin:0px 167.5px 20px;  */
+}
+.secbHeading{
+    /* text-align: center; */
+    margin: 2.5rem auto 2.5rem;
+    font-weight: 600;
+    width: max-content;
+    padding: 0px 5px;
+    font-size: 24px;
+    background:linear-gradient(to bottom,rgb(236, 87, 76),#f8f7f7);
+}
+.secbfirstContainer{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    margin: auto auto 2.5rem;
+}
+.secbfirstContainer>div{
+/* border:2px solid black */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height:242.03px;
+}
+
+.i2{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.secbfirstContainer img{
+    height:242.03px;
+    width:347.19px;
+}
+.secb_image{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.secbImage{
+    position:relative;
+}
+.centered {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1.6rem 0;
+    position: absolute;
+    width:100%;
+    height:40%;
+    top: 75.5%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    background: rgba(245, 237, 237, 0.836);/* Black background with opacity */
+    padding-top: 10px;
+    }
+    .image_overlay{
+        position: absolute;
+        top:20%;
+        left:0;
+        width:100%;
+        height:80%;
+        background: rgba(245, 237, 237, 0.397);/* Black background with opacity */
+        color:black;
+        font-family: 'Quicksand',sans-serif;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+     }
+     .image_overlay--blur{
+         backdrop-filter: blur(5px) ;
+     }
+     .image_overlay >*{
+         transform: translateY(20px);
+         transition: transform 0.25s;
+     }
+     .image_overlay:hover{
+       opacity: 1;
+     }
+     .image_overlay:hover>*{
+         transform: translateY(0);
+     }
+     .image_title{
+         font-size:1.4rem;
+         font-family:sans-serif;
+         /* padding-left:40px */
+         font-weight: 600;
+         margin: 1.6rem 0;
+         text-align: center;
+         color:inherit;
+         font-family: inherit;
+     }
+     .image_description{
+         font-size:16px;
+         margin-top:10px;;
+         /* padding:0px 40px; */
+         text-align: center;
+         color:inherit;
+         font-family: inherit;
+     }
+
+     /* new person */
+
+/* #container{  
+    margin: auto;
+} */
+
+
+
+
+#Bsell {
+    box-sizing: border-box;
+    padding: 4%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 75%;
+    display: grid;
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    /* height: 450px; */
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+#Bsell >div {
+      /* width: 80%;
+      height: 95%; */
+      box-sizing: border-box;
+ /* margin: auto; */
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+
+}
+
+.row > div {
+    width: 90%;
+    /* height: 100%; */
+    border-radius: 2%;
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fff;
+    
+    
+}
+
+.row div div {
+    height: 300px;
+    width: 300px;
+}
+
+.row > div > div > img{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+
+
+.row div div div {
+    display: block;
+    height: 20%;
+}
+
+#poster{
+    width: 70%;
+    height: 280.67px;
+    margin: auto;
+}
+#poster > img {
+    width: 100%;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    /* height: 12%; */
+    /* width: 70%; */
+    font-family: sans-serif;
+    /* margin: auto; */
+    /* border: 1px solid; */
+    /* background:linear-gradient(to bottom,rgb(236, 87, 76),#f8f7f7); */
+    margin-top: 20px;
+}
+
+.heading h1{
+    border: 1px solid;
+    height: 10%;
+    width: 30%;
+    /* width: auto; */
+    border-style: none;
+    /* font-size:24px ; */
+    margin: auto;
+    background:linear-gradient(to bottom,rgb(236, 87, 76),#f8f7f7);
+}
+
+#Scate div {
+    border-radius: 50%;
+    /* border: 1px solid ; */
+    box-sizing: border-box;
+}
+#Scate{
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: space-around;
+    gap: 20px;
+}
+#scate0{
+    /* margin: auto; */
+    display: flex;
+    /* width: 75%; */
+    justify-content: center;
+}
+
+
+.poster{
+    width: 99%;
+    margin: auto;
+    padding-top: 10px;
+}
+.poster img {
+    width: 100%;
+}
+
+
+/* for slick slider */
+.main {
+    margin: auto;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.hedings {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid; */
+    justify-content: space-between;
+}
+
+.headings p{
+    font-size: 16px;
+}
+.first {
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+.imgd{
+    width:290px ;
+    height: 150px;
+    box-sizing: border-box;
+    padding-left: 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.imgd img {
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-size: 12px;
+    text-align: center;
+}
+
+/* new person */
+
+#Cat{
+        display: grid;
+        grid-template-rows:190px ;
+        grid-template-columns:repeat(8,1fr);
+        justify-content: center;
+    }
+    #temp{
+        display: grid;
+        grid-template-rows:270px ;
+        grid-template-columns:repeat(3,1fr);
+        /* justify-content: center;   */
+    }
+    .temp_img > img{
+        width:370px;
+        height: 230px;
+    }
+    #Kits{
+        display: grid;
+        grid-template-rows: 370px; 
+        grid-template-columns:repeat(3,1fr);
+        justify-content: center;   
+        gap: 20px; 
+    }
+    #Kits > div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .Kits_img > img{
+        width: 100%;
+        /* width:392px; */
+        height: 230px;
+    }
+    .Kits_img{
+        height:320px
+    }
+    .Kits_img > h3{
+     /* padding-left: 110px; */
+     text-align: center;
+     margin-bottom: 5px;
+    }
+    
+    .Kits_img > p {
+        /* padding-left: 125px; */
+        margin-top: 5px;
+    }
+    #bittu > h2{
+        padding-left: 490px;
+        
+    }
+    .Cat_img > p  {
+        padding-left: 33px;
+    }
+    .Cat_img_1 > p  {
+        padding-left: 20px;
+    }
+    .poster_1 > img {
+        width: 100%;
+        height: 230px;
+        padding-top: 15px;
+    }
+    .poster_2 > img {
+        width: 90%;
+        height: 230px;
+        padding: 15px 0 0 55px;
+      
+    }
+    .d1{
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /* new person */
+
+    .flexDiv{
+    display:grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: auto;
+    font-size: 12px;
+    text-align:left;
+    padding:0px 150px 0px 150px;
+    gap:30px;
+    font-family: sans-serif;
+}
+.flexDiv>div>h6{
+    color:grey;
+    font-size:12px;
+    text-align: center;
+}
+.flexDiv>div>p:hover{
+    color:#c48408;
+}
+.flexDiv1{
+    display:flex;
+    justify-content: space-around;
+    padding:0px 150px 0px 150px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#social{
+    display:flex;
+    margin-top:30px;
+    width: 30%;
+    justify-content: space-between;
+}   
+.i5{
+    height:20px;
+    padding-top:15px;
+}
+.i6{
+    height: 50px;
+    width: 150px;
+}
+/* img{
+    height:20px;
+    padding-top:15px;
+} */
+button{
+    font-size:9px;
+    width:100px;
+    color:white;
+    height: 26px;
+    background-color:black;
+    border-style: none;
+    /* margin-bottom: -10px; */
+}
+#emailSearch{
+    font-size:11px;
+    width:200px;
+    height: 20px;
+    border-style: none;
+}
+    </style>
+</head>
+<body>
+    <div id="a1">
+        <div id="a">
+            <div class="a1">
+                <div class="a2">
+                    <img src="./a.png" width="40px" height="40px" class="a5" />
+                    <p>MyGlamm Superfoods Cacao From Africa</p>
+                </div>
+                <!-- <div> -->
+                <p class="a3">SHOP NOW</p>
+                <!-- </div> -->
+            </div>
+            <div class="a2">
+                <img src="./a1.png" width="30px" height="32px" class="a4" />
+                <p>MyGlamm Store</p>
+            </div>
+        </div>
+
+
+        <div class="a9">
+            <div class="a10">
+                <div>
+                    <img src="https://files.myglamm.com/site-images/original/MyGlamm-Logo_1.jpg" width="160px"
+                        height="50px" />
+                </div>
+                <div class="a6">
+                    <img src="./a4.png" width="30px" height="35px" class="a8" />
+                    <input placeholder="Find Lipstick, Eyeliner, Makeup Tutorial etc" class="a7" />
+                </div>
+            </div>
+
+            <div>
+                <div class="a11">
+                    <img src="./a2.png" />
+                    <img src="./a6.png" id="a12" onclick="window.location.href='login.html'"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="a13">
+            <p id="b">HOME</p>
+            <p id="b1" onclick="makeupFunc()">MAKEUP</p>
+            <p id="b2">HAIRCARE</p>
+            <p id="b3" onclick="skincareFunc()">SKINCARE</p>
+            <p id="b4">SANITIZING CARE</p>
+            <p id="b5">COLLECTION</p>
+            <p id="b6" onclick="rewardFunc()">REWARDS</p>
+            <p id="b7" onclick="studioFunc()">MYGLAMM STUDIO</p>
+            <p id="b8" onclick="offerFunc()">OFFERS</p>
+        </div>
+    </div>
+
+    <div id="a3"></div>
+
+    <!-- new person -->
+<div>
+    <img id="firstimage" src="https://files.myglamm.com/site-images/original/sale-extended-1920x527_1.gif" alt="first">
+    <img id="secimage" src="https://files.myglamm.com/site-images/original/2240-x-614_3.jpg" alt="second">
+    <div id="row1header" ><h3>OFFER SEGMENTATION SLEEK BANNER</h3></div>
+   <div id="row1">
+    <div id="innerbox"><img src="https://files.myglamm.com/site-images/original/summerv-sale-2240x614_1.jpg" alt="box1">
+        <h3>Clearance Haul repeat</h3></div>
+    <div id="innerbox"><img src="https://files.myglamm.com/site-images/original/freebie-2240x614.jpg" alt="box2">
+        <h3>Summer Secret MGXO</h3></div>
+    <div id="innerbox"><img src="https://files.myglamm.com/site-images/original/mgxo-special-website.jpg" alt="box3">
+        <h3>MGXOSPECIAL new user</h3></div>
+    </div>
+
+    <div id="row2header"><h3>IN THE SPOTLIGHT</h3></div>
+    <div id="row2">
+    <div  id="innerbox"><img src="https://files.myglamm.com/site-images/original/SF-Banner---700-x-488.jpg" alt="box1">
+         <h3>Superfood Summer Sale</h3> </div>
+    <div id="innerbox"><img src="https://files.myglamm.com/site-images/original/Summer-Hits-700x488.jpg" alt="box2">
+        <h3>Save Big on Combo</h3></div>
+    <div id="innerbox"><img src="https://files.myglamm.com/site-images/original/new-launches-700-x-488.jpg" alt="box3">
+        <h3>MyGlamm New Launches</h3></div>
+        </div>
+       
+        <!-- new person -->
+
+        <div class="secbBox">
+            <img onClick="window.location.href='mmbeauty.html'" src="https://files.myglamm.com/site-images/original/1920-X-527_1.jpg"/>
+          </div>
+          <div class="secbBox">
+            <img src="https://files.myglamm.com/site-images/original/MGSleek-(Desktop)---2240x614-100.jpg"/>
+          </div>
+           <h2 class="secbHeading">LATEST GLAMM LAUNCHES</h2>
+          <div class="secbfirstContainer">
+            <div class="secbImage">
+              <img class="secb_image" onClick="window.location.href='liquidLipstick.html'" src="https://files.myglamm.com/site-images/original/700x488-In-the-spotlight-Desktop_1.jpg"/>
+              <div class="centered">THE MATTEST MATTE LIQUID LIPSTICK</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">THE MATTEST MATTE LIQUID LIPSTICK</div>
+                <p class="image_description">
+                  THE MATTEST MATTE LIQUID LIPSTICK          
+                </p>
+            </div>
+             </div>
+            <div class="secbImage" >
+              <img class="secb_image" onClick="window.location.href='superfoods.html'" src="https://files.myglamm.com/site-images/original/New-Lip-Balm-Desktop-700x488_5.gif"/>
+              <div class="centered">Superfoods Color Pop Lip balm</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">Superfoods Color Pop Lip balm</div>
+                <p class="image_description">
+                  Superfoods Color Pop Lip balm</p>
+            </div>
+            </div>
+            <div class="secbImage" >
+              <img class="secb_image" onClick="window.location.href='nailEnamel.html'" src="https://files.myglamm.com/site-images/original/Nail-Enamel-In-the-spotlight-Desktop-700-x-488.jpg"/>
+              <div class="centered">Two of Your Kind Nail Enamel</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">Two of Your Kind Nail Enamel</div>
+                <p class="image_description">
+                  Two of Your Kind Nail Enamel          
+                </p>
+            </div>
+            </div>
+          </div>
+          <div>
+              <img src="https://files.myglamm.com/site-images/original/Sleek-D-2240-x-614.jpg" class="i2"/>
+          </div>
+          <h2 class="secbHeading">ESSENTIAL BUDGET BUYS</h2>
+          <div class="secbfirstContainer">
+            <div class="secbImage" >
+              <img class="secb_image" src="https://files.myglamm.com/site-images/original/wo-essential_2.jpg"/>
+              <div class="centered">Wipeout</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">Wipeout</div>
+                <p class="image_description">
+                  Wipeout          
+                </p>
+            </div>
+            </div>
+            <div class="secbImage" >
+              <img class="secb_image" onClick="window.location.href='under499store.html'" src="https://files.myglamm.com/site-images/original/Glamm-Picks-700x488.jpg"/>
+              <div class="centered">Under 499 Store</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">Under 499 Store</div>
+                <p class="image_description">
+                  Under 499 Store          
+                </p>
+            </div>
+            </div>
+            <div class="secbImage" >
+              <img class="secb_image" onClick="window.location.href='under999store.html'" src="https://files.myglamm.com/site-images/original/Glamm-Must-haves-desktop.jpg"/>
+              <div class="centered">Under 999 Store</div>
+              <div class="image_overlay image_overlay--blur">
+                <div class="image_title">Under 999 Store</div>
+                <p class="image_description">
+                  Under 999 Store          
+                </p>
+            </div>
+            </div>
+          </div>
+          <div class="secbBox">
+            <img onClick="window.location.href='glamourOnTheGo.html'"  src="https://files.myglamm.com/site-images/original/Pouch-Banner-2240x614.jpg"/>
+          </div>
+
+          <!-- new person -->
+
+          <div id="container">
+
+            <!-- sliding div  -->
+            <div class="heading"><h1 style="margin-bottom: 20px;">BESTSELLERS</h1></div>
+
+             <div id="Bsell" class="slider">
+                 <div class="row"> 
+                    <div>
+                        <div>
+                            <img src="https://files.myglamm.com/site-images/400x400/OTP-2.jpg" alt="">
+                        </div>
+                       
+                        <h3>MYGLAMM LIT LIQUID MATTE LIPSTICK - OTP</h3>
+                        <p>Moringa Oil Enriched Matte Lipstick</p>
+                        <h3>₹ 395</h3>
+                       
+                    </div>
+                 </div>
+        
+                 <div class="row"> 
+                    <div>
+                        <div>
+                            <img src="https://files.myglamm.com/site-images/800x800/Soft-Matte-post-1-Poppy-Pink.jpg" alt="">
+                        </div>
+                    
+                        <h3>MANISH MALHOTRA SOFT MATTE LIPSTICK - POPPY PINK</h3>
+                        <p>Hydrating Long-wear Lipstick</p>
+                        <h3>₹ 950</h3>
+                     
+                    </div>
+                </div>
+        
+                <div class="row"> 
+                   <div>
+                   <div>
+                    <img src="https://files.myglamm.com/site-images/800x800/Facewash_3.jpg" alt="">
+                   </div>
+                   
+                    <h3>MYGLAMM WIPEOUT GERM KILLING FACE WASH</h3>
+                    <p>Tea Tree Oil & Vitamin E-infused Face Wash</p>
+                    <h3>₹ 119</h3>
+                  
+                   </div>
+                </div>
+        
+                <div class="row"> 
+                    <div>
+                       <div>
+                        <img src="https://files.myglamm.com/site-images/800x800/Hi-Shine-Post-1-Mauve-Struck.jpg" alt="">
+                       </div>
+                   
+                        <h3>MANISH MALHOTRA HI-SHINE LIPSTICK - MAUVE STRUCK</h3>
+                    <p>Lightweight, Long-wear Lipsticks</p>
+                    <h3>₹ 950</h3>
+                    
+                    </div>
+                </div>
+        
+                <div class="row"> 
+                   <div>
+                   <div>
+                    <img src="https://files.myglamm.com/site-images/800x800/MHML-(1).jpg" alt="">
+                   </div>
+                    
+                        <h3>MYGLAMM LIT CREAMY MATTE LIPSTICK - MANHATTAN</h3>
+                    <p>Precision Perfect Matte Slimstick</p>
+                    <h3>₹ 447 <S>₹ 595</S></h3>
+                    
+                   </div>
+                </div>
+        
+                <div class="row"> 
+                   <div>
+                    <div>
+                        <img src="https://files.myglamm.com/site-images/800x800/Artboard-1-(1)-(1).jpg" alt="">
+                    </div>
+                   
+                    <h3>MYGLAMM SUPERFOODS KAJAL - INDIGO</h3>
+                    <p>Long-Wear Smudge-Proof Kajal Infused With Natural Superfood Extracts</p>
+                    <h3>₹ 395</h3>
+                   
+                   </div>
+                </div>
+        
+                <div class="row"> 
+                    <div>
+                       <div>
+                        <img src="https://files.myglamm.com/site-images/800x800/Rare-(1).jpg" alt="">
+                       </div>
+                   
+                    <h3>MYGLAMM LIT VELVET MATTE LIQUID LIPSTICK - RARE</h3>
+                    <p>Hydrating, Velvet Matte Liquid Lipcolour</p>
+                    <h3>₹ 395</h3>
+                  
+                    </div>
+                </div>
+        
+                <div class="row"> 
+                   <div>
+                   <div>
+                    <img src="https://files.myglamm.com/site-images/800x800/Liquid-Matte-Lipstick-post-1-Envy-Me.jpg" alt="">
+                   </div>
+                  
+                        <h3>MANISH MALHOTRA LIQUID MATTE LIPSTICK - ENVY ME</h3>
+                    <p>Long-stay Velvet Matte Lip Colour</p>
+                    <h3> ₹ 697 <S>₹ 995</S></h3>
+                    
+                   </div>
+                </div>
+               
+             </div>
+        
+               <!--  big add poster  -->
+            <div id="poster">
+                <img style="padding:40px" src="https://files.myglamm.com/site-images/original/Sleek-banner-Web.jpg" alt="">
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- shop by category panel -->
+            <div class="heading"><h1 style="margin-top:-20px;margin-bottom: 20px;">SHOP BY CATEGORIES</h1></div>
+            <div id="scate0">
+            <div id="Scate">
+                
+             <div> <img src="https://files.myglamm.com/site-images/original/SKin-1-2.png" alt="">
+            <h2>Skin</h2></div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Lips-3.png" alt="">
+            <h2>Lips</h2></div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Superfoods-Model-120-X-120-px_2.jpg" alt="">
+            <h2>Hair</h2></div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Eyes-4.png" alt="">
+            <h2>Eyes</h2></div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Face-5.png" alt="">
+            <h2>Face</h2></div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Nails-1.png" alt="">
+            <h2>Nails</h2>
+        </div>
+             <div> <img src="https://files.myglamm.com/site-images/original/App-PersonalCare_2.png" alt="">
+            <h2 style="margin-bottom: -20px;">Sanitizing</h2>
+            <h2>Care</h2>
+          </div>
+             <div> <img src="https://files.myglamm.com/site-images/original/Bath.png" alt="">
+              <h2 style="margin-bottom: -20px;">Bath &</h2>
+              <h2>Body</h2>
+            </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- nexwperson -->
+<div class="d1">
+          <div id="temp">
+            <div class="temp_img"><img src="https://files.myglamm.com/site-images/original/final-glow-SK-banner-700x488.gif" alt=""></div>
+            <div class="temp_img"><img src="https://files.myglamm.com/site-images/original/Beauty-Calender-desktop-700x488.jpg" alt=""></div>
+            <div class="temp_img"><img src="https://files.myglamm.com/site-images/original/Influencer-Store700x488.png" alt=""></div>
+           </div>
+           <h2 style="text-align:center">KITS & COMBOS</h2>
+           <div id="Kits">
+            <div class="Kits_img">
+                <img src="https://files.myglamm.com/site-images/original/desktop-mk-combo.jpg" alt="">
+                <h3>Makeup Combos</h3>
+                <p>Makeup Combos</p>
+            </div>
+            <div class="Kits_img">
+                <img src="https://files.myglamm.com/site-images/original/desktop-skin-combo.jpg" alt="">
+               <h3>Skincare Combos </h3>
+               <p style="text-align: center;">Skincare Combos</p>
+            </div>
+            <div class="Kits_img">
+                <img src="https://files.myglamm.com/site-images/original/Desktop-combo.jpg" alt="">
+                <h3>Beaut Kits Under 499</h3>
+                <p>Beaut Kits Under 499</p>
+            </div>
+           </div>
+           <div class="poster_1">
+              <img src="https://files.myglamm.com/site-images/original/Community-Banner-2240-x-344_1.jpg" alt="">
+            </div>
+           <div class="poster_2">
+               <img src="https://files.myglamm.com/site-images/original/disclaimer-mgp_1.png" alt="">
+            </div>
+           
+        </div> 
+    </div>  
+
+    <!-- new person -->
+
+    <br id="footerDiv">
+    <hr></hr>
+        <div class="flexDiv">
+            <div>
+                <h6>LIPS</h6>
+                <p>Lipstick</p>
+                <p>Matte Lipstick</p>
+                <p>Metallic Lipstick</p>
+                <p>Hi-Shine Lipstick</p>
+                <p>Liquid Lipstick</p>
+                <p>Lip Gloss</p>
+                <p>Hi-Shine Lipstick</p>
+                <p>Lip Liner</p>
+                <p>Lip Balm</p>
+                <p>Glitter</p>
+                <p>Lip Stain</p>
+                <p>Lip Chalks</p>
+                <p>Lipstick Set</p>
+                <p>Lip Kit</p>
+                <p>Find Your Lipstick</p>
+            </div>
+            <div>
+                <h6>FACE</h6>
+                <p>Face Sets</p>
+                <p>Fixing Powder</p>
+                <p>Primer</p>
+                <p>Concealer</p>
+                <p>Fountain</p>
+                <p>Compact</p>
+                <p>Banana Powder</p>
+                <p>Highlighter</p>
+                <p>Blush</p>
+                <p>Bronzer</p>
+                <p>Sindoor</p>
+                <p>Cheek Stain</p>
+                <p>Face Chalks</p>
+                <p>Sheet Masks</p>
+                <p>Setting Powder</p>
+                <p>Makeup Accessories</p>
+                <p>Makeup Brushes</p>
+            </div>
+            <div>
+                <h6>EYES</h6>
+                <p>Eye Shadow</p>
+                <p>Eyeliner</p>
+                <p>Eyebrows</p>
+                <p>Glitter</p>
+                <p>Eye Chalks</p>
+                <p>Mascara</p>
+                <p>Kajal</p>
+                <p>Eyeshadow Brushes</p>
+                <p>Eye Combos</p>
+            </div>
+            <div>
+                <h6>NAILS</h6>
+                <p>Nail Polish</p>
+                <p>Matte Nail Polish</p>
+                <p>Matte Nail Enamel</p>
+                <p>Glossy Nail Enamel</p>
+                <p>Nail Lacquer</p>
+            </div>
+            <div>
+                <h6>SKINCARE</h6>
+                <p>Face Cleanser</p>
+                <p>Cleanser</p>
+                <p>Toner</p>
+                <p>Moisturising Cream</p>
+                <p>Moisturiser</p>
+                <p>Face Wash</p>
+                <p>Body Lotion</p>
+                <p>Sheet Mask</p>
+                <p>Lip Balms</p>
+                <p>Eye Cream</p>
+                <p>Face Sunscreen</p>
+                <p>Exfoliators & Scrub</p>
+                <p>Face Masks</p>
+                <p>Moisturising Gel</p>
+                <p>Night Cream</p>
+                <p>Essence</p>
+                <p>Serum</p>
+            </div>
+            <div>
+                <h6>BATH & BODY</h6>
+                <p>Face Washes</p>
+                <p>Shower Gel</p>
+                <p>Body Moisturizer</p>
+                <p>Soaps</p>
+                <p>Hand Care</p>
+                <p>Foot Care</p>
+                <p>Sanitizing</p>
+                <p>Body Spray</p>
+            </div>
+            <div>
+                <h6>SANITIZ CARE</h6>
+                <p>Sanitizing Wipes</p>
+                <p>Face Washes</p>
+                <p>Shower Gels</p>
+                <p>Body Moisturizers</p>
+                <p>Soaps</p>
+                <p>Hand Care</p>
+                <p>Foot Care</p>
+                <p>Suraface</p>
+                <p>Spray</p>
+                <p>Sanitizing Kits</p>
+                <p>Sanitizing Spray</p>
+                <p>Hand Sanitizer</p>
+            </div>
+            <div>
+                <h6>KITS & COMBOS</h6>
+                <p>Makeup Kits</p>
+                <p>Bridal Makeup Kits</p>
+                <p>Makeup Combo</p>
+                <p>Makeup Gift Sets</p>
+                <p>Cosmetics Kits & Combos</p>
+            </div>
+            <div>
+                <h6>HAIR CARE</h6>
+                <p>Shampoo</p>
+                <p>Conditioner</p>
+                <p>Hair Oil</p>
+                <p>Serum</p>
+                <p>Hair Mask</p>
+                <p>Combos</p>
+            </div>
+            <div>
+                <h6>MYGLAMM STUDIO</h6>
+                <p>Style</p>
+                <p>Lifestyle</p>
+                <p>Treds</p>
+                <p>Tips</p>
+                <p>Beauty</p>
+                <p>Tutorials</p>
+            </div>
+            <div>
+                <h6>KNOW MORE</strong></h6>
+                <p>About Us</p>
+                <p>Exclusive Offers</p>
+                <p>Refer & Earn</p>
+                <p>myglammPARTIES</p>
+                <p>Store Locator</p>
+                <p>Press & Media</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Shipping and Delivery Policy</p>
+                <p>Returns and Replacements </p>
+                <p>MyGlamm Rewards</p>
+                <p>Loyalty Program Policy</p>
+                <p>Sitemap</p>
+            </div>
+        </div>
+        <div class="flexDiv1">
+            <div style="margin-right: 20px;">
+                <p style="margin-bottom: 10px;">SUBSCRIBE FOR MYGLAMM EMAILS</p>
+                <input type="text" placeholder="Please enter valid email address" id="emailSearch"/><button>SUBSCRIBE NOW</button>                   
+            </div>
+            <div id="social">   
+                <p style="margin-bottom: 0;font-size: 15px;">STAY CONNECTED  |</p>
+                <image class="i5" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png"></image>
+                <image class="i5"  src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-128.png"></image>
+                <image class="i5" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Twitter-128.png"></image>
+                <image class="i5" src="https://cdn2.iconfinder.com/data/icons/social-media-2102/100/social_media_network-29-128.png"></image>
+                <image class="i5" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-128.png"></image>
+            </div>
+            <div>
+                <div>
+                    <p>EXPERIENCE THE MYGLAMM MOBILE APP</p>
+                </div>
+                <div style="margin-left: 20px;">
+                    <image class="i6"src="https://www.myglamm.com/images/iosStore.png"></image>
+                <image class="i6" src="https://www.myglamm.com/images/playStore.png"></image>
+                </div> 
+                
+            </div>
+        </div>
+</div>
+          </body>
+
+</html>
+<script src="./script.js"></script>
+<script src="./studio.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    let a3 = document.getElementById("a3")
+
+document.getElementById("b1").addEventListener("pointerenter", b)
+
+function b() {
+
+    a3.innerHTML = null
+
+    let div = document.createElement("div")
+    div.setAttribute("id", "a4")
+
+    let div1 = document.createElement("div")
+
+    let p0 = document.createElement("p")
+    p0.innerText = "LIPS"
+    p0.style.color = "rgb(236,87,76)"
+    p0.style.fontWeight = "bold"
+
+    let p1 = document.createElement("p")
+    p1.innerText = "Lipstick"
+
+    let p2 = document.createElement("p")
+    p2.innerText = " Liquid Lipstick"
+
+    let p3 = document.createElement("p")
+    p3.innerText = "Hi-Shine Lipstick"
+
+    let p4 = document.createElement("p")
+    p4.innerText = "Metalllic Lipstick"
+
+    let p5 = document.createElement("p")
+    p5.innerText = "Lip Gloss"
+
+    let p6 = document.createElement("p")
+    p6.innerText = "Lip Liner"
+
+    let p7 = document.createElement("p")
+    p7.innerText = "Lip Balm"
+
+    let p8 = document.createElement("p")
+    p8.innerText = "Lip Glitter"
+
+    let p9 = document.createElement("p")
+    p1.innerText = "Lip Stain"
+
+    let p10 = document.createElement("p")
+    p10.innerText = "Lip Chalks"
+
+    let p11 = document.createElement("p")
+    p11.innerText = "Lipstick Set"
+
+    let p12 = document.createElement("p")
+    p12.innerText = "Lip Kit"
+
+    let p13 = document.createElement("p")
+    p13.innerText = "Find Your Lipstick"
+
+    let p14 = document.createElement("p")
+    p14.innerText = " Matte Lipstick"
+
+    let div2 = document.createElement("div")
+
+    let q0 = document.createElement("p")
+    q0.innerText = "FACE"
+    q0.style.color = "rgb(236,87,76)"
+    q0.style.fontWeight = "bold"
+
+    let q1 = document.createElement("p")
+    q1.innerText = "Fixing Powder"
+
+    let q2 = document.createElement("p")
+    q2.innerText = "Primer"
+
+    let q3 = document.createElement("p")
+    q3.innerText = "Concealer"
+
+    let q4 = document.createElement("p")
+    q4.innerText = "Foundation"
+
+    let q5 = document.createElement("p")
+    q5.innerText = "Compact Powser"
+
+    let q6 = document.createElement("p")
+    q6.innerText = "Setting Powder"
+
+    let q7 = document.createElement("p")
+    q7.innerText = "Banana Powser"
+
+    let q8 = document.createElement("p")
+    q8.innerText = "Sindoor"
+
+    let q9 = document.createElement("p")
+    q9.innerText = "Highlighter"
+
+    let q10 = document.createElement("p")
+    q10.innerText = "Blush"
+
+    let q11 = document.createElement("p")
+    q11.innerText = "Bronzer"
+
+    let q12 = document.createElement("p")
+    q12.innerText = "Cheek Stain"
+
+    let q13 = document.createElement("p")
+    q13.innerText = "Face Chalks"
+
+    let q14 = document.createElement("p")
+    q14.innerText = "Masks"
+
+    let div3 = document.createElement("div")
+
+    let r0 = document.createElement("p")
+    r0.innerText = "EYES"
+    r0.style.color = "rgb(236,87,76)"
+    r0.style.fontWeight = "bold"
+
+    let r1 = document.createElement("p")
+    r1.innerText = "Eye Shadow"
+
+    let r2 = document.createElement("p")
+    r2.innerText = "Eye Liner"
+
+    let r3 = document.createElement("p")
+    r3.innerText = "Eyebrows"
+
+    let r4 = document.createElement("p")
+    r4.innerText = "Glitter"
+
+    let r5 = document.createElement("p")
+    r5.innerText = "Eye Chalks"
+
+    let r6 = document.createElement("p")
+    r6.innerText = "Mascara"
+
+    let r7 = document.createElement("p")
+    r7.innerText = "Kajal"
+
+    let r8 = document.createElement("p")
+    r8.innerText = "Eye Combos"
+
+    let div4 = document.createElement("div")
+
+    let s0 = document.createElement("p")
+    s0.innerText = "NAILS"
+    s0.style.color = "rgb(236,87,76)"
+    s0.style.fontWeight = "bold"
+
+    let s1 = document.createElement("p")
+    s1.innerText = "Gel"
+
+    let s2 = document.createElement("p")
+    s2.innerText = "Matte Nail Enaemel"
+
+    let s3 = document.createElement("p")
+    s3.innerText = "Matte Enaemel Polish"
+
+    let s4 = document.createElement("p")
+    s4.innerText = "Glossy Nail Enaemel"
+
+    let s5 = document.createElement("p")
+    s5.innerText = "KITS AND COMBOS"
+    s5.style.color = "rgb(236,87,76)"
+    s5.style.fontWeight = "bold"
+
+    let s6 = document.createElement("p")
+    s6.innerText = "Makeup Kits"
+
+    let s7 = document.createElement("p")
+    s7.innerText = "Bridal Makeup Kits"
+
+    let s8 = document.createElement("p")
+    s8.innerText = "Makeup Gift Sets"
+
+    let s9 = document.createElement("p")
+    s9.innerText = "MAKEUP ACCESSORIES"
+    s9.style.color = "rgb(236,87,76)"
+    s9.style.fontWeight = "bold"
+
+    let s10 = document.createElement("p")
+    s10.innerText = "Makeup Brushes"
+
+    let s11 = document.createElement("p")
+    s11.innerText = "Eyeshadow Brushes"
+
+    div1.append(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14)
+
+    div2.append(q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14)
+
+    div3.append(r0, r1, r2, r3, r4, r5, r6, r7, r8)
+
+    div4.append(s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11)
+
+    div.append(div1, div2, div3, div4)
+    a3.append(div)
+}
+
+document.getElementById("b2").addEventListener("pointerenter", b2)
+
+function b2() {
+
+    a3.innerHTML = null
+
+    let div = document.createElement("div")
+    div.setAttribute("id", "a5")
+
+    let div1 = document.createElement("div")
+    // div.setAttribute("id", "a6")
+    div1.style.width = "40%"
+    div1.style.padding = "10px"
+
+    let p1 = document.createElement("p")
+    p1.innerText = "Hair Care"
+    p1.style.color = "rgb(236,87,76)"
+    p1.style.fontWeight = "bold"
+
+    let p2 = document.createElement("p")
+    p2.innerText = "Shampoo"
+
+    let p3 = document.createElement("p")
+    p3.innerText = "Conditoner"
+
+    let p4 = document.createElement("p")
+    p4.innerText = "Hair Oil"
+
+    let p5 = document.createElement("p")
+    p5.innerText = "Serum"
+
+    let p6 = document.createElement("p")
+    p6.innerText = "Hair Mask"
+
+    let p7 = document.createElement("p")
+    p7.innerText = "Combos"
+
+    let div2 = document.createElement("div")
+    div2.style.display = "flex"
+    div2.style.padding = "20px"
+    div2.style.gap = "20px"
+
+    let div3 = document.createElement("div")
+    let img1 = document.createElement("img")
+    img1.src = "https://files.myglamm.com/site-images/400x400/Artboard-1-(1).jpg"
+    img1.style.width = "200px"
+    img1.style.height = "220px"
+    let h1 = document.createElement("h4")
+    h1.innerText = "MyGlamm SUPERFOODS Onion..."
+    let p11 = document.createElement("p")
+    p11.innerText = "For Hair Fall Control"
+    p11.style.textAlign = "center"
+    p11.style.fontSize = "14px"
+    let h11 = document.createElement("h4")
+    h11.innerText = "₹299"
+    h11.style.textAlign = "center"
+
+    let div4 = document.createElement("div")
+    let img2 = document.createElement("img")
+    img2.src = "https://files.myglamm.com/site-images/400x400/Artboard-1_27.jpg"
+    img2.style.width = "200px"
+    img2.style.height = "220px"
+    let h2 = document.createElement("h4")
+    h2.innerText = "MyGlamm SUPERFOODS Onion..."
+    let p12 = document.createElement("p")
+    p12.innerText = "For Hair Fall Control"
+    p12.style.textAlign = "center"
+    p12.style.fontSize = "14px"
+    let h12 = document.createElement("h4")
+    h12.innerText = "₹299"
+    h12.style.textAlign = "center"
+
+    let div5 = document.createElement("div")
+    let img3 = document.createElement("img")
+    img3.src = "https://files.myglamm.com/site-images/400x400/Artboard-1-(3).jpg"
+    img3.style.width = "200px"
+    img3.style.height = "220px"
+    let h3 = document.createElement("h4")
+    h3.innerText = "MyGlamm SUPERFOODS Onion..."
+    let p13 = document.createElement("p")
+    p13.innerText = "For Hair Fall Control"
+    p13.style.textAlign = "center"
+    p13.style.fontSize = "14px"
+    let h13 = document.createElement("h4")
+    h13.innerText = "₹349"
+    h13.style.textAlign = "center"
+
+    let div6 = document.createElement("div")
+    let img4 = document.createElement("img")
+    img4.src = "https://files.myglamm.com/site-images/400x400/Artboard-1-(1).jpg"
+    img4.style.width = "200px"
+    img4.style.height = "220px"
+    let h4 = document.createElement("h4")
+    h4.innerText = "MyGlamm SUPERFOODS Onion..."
+    let p14 = document.createElement("p")
+    p14.innerText = "For Hair Fall Control"
+    p14.style.textAlign = "center"
+    p14.style.fontSize = "14px"
+    let h14 = document.createElement("h3")
+    h14.innerText = "₹399"
+    h14.style.textAlign = "center"
+
+    div1.append(p1, p2, p3, p4, p5, p6, p7)
+
+    div3.append(img1, h1, p11, h11)
+    div4.append(img2, h2, p12, h12)
+    div5.append(img3, h3, p13, h13)
+    div6.append(img4, h4, p14, h14)
+    div2.append(div3, div4, div5, div6)
+
+    div.append(div1, div2)
+    a3.append(div)
+}
+
+document.getElementById("b7").addEventListener("pointerenter", b4)
+
+function b4() {
+
+    a3.innerHTML = null
+
+    let div = document.createElement("div")
+    // div1.style.width = "40%"
+    div.style.padding = "10px"
+    div.style.marginLeft = "-80%"
+
+    let p1 = document.createElement("p")
+    p1.innerText = "STUDIO"
+    p1.style.color = "rgb(236,87,76)"
+    p1.style.fontWeight = "bold"
+
+    let p2 = document.createElement("p")
+    p2.innerText = "Blogs"
+
+    div.append(p1, p2)
+    a3.append(div)
+}
+
+document.getElementById("b3").addEventListener("pointerenter", b6)
+
+function b6() {
+
+    a3.innerHTML = null
+
+    let div = document.createElement("div")
+    // div1.style.width = "40%"
+    div.style.padding = "10px"
+    div.style.marginLeft = "-80%"
+
+    let p1 = document.createElement("p")
+    p1.innerText = "Cleanser"
+
+
+    let p2 = document.createElement("p")
+    p2.innerText = "Moisturiser"
+
+    let p3 = document.createElement("p")
+    p3.innerText = "Serum"
+
+
+    let p4 = document.createElement("p")
+    p4.innerText = "Body Lotion"
+
+    let p5 = document.createElement("p")
+    p5.innerText = "Sheet Mask"
+
+
+    let p6 = document.createElement("p")
+    p6.innerText = "Lip Balms & Treatments"
+    let p7 = document.createElement("p")
+    p7.innerText = "Face Sunscreen"
+
+
+    let p8 = document.createElement("p")
+    p8.innerText = "Eye Cream"
+
+    let p9 = document.createElement("p")
+    p9.innerText = "Face Scrub & Exfoliators"
+
+
+    let p10 = document.createElement("p")
+    p10.innerText = "Toner"
+
+    div.append(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10)
+    a3.append(div)
+}
+
+document.getElementById("b4").addEventListener("pointerenter", b8)
+
+function b8() {
+
+    a3.innerHTML = null
+
+    let div = document.createElement("div")
+    div.setAttribute("id", "a5")
+
+    let div1 = document.createElement("div")
+    // div.setAttribute("id", "a6")
+    div1.style.width = "40%"
+    div1.style.padding = "10px"
+
+    let p1 = document.createElement("p")
+    p1.innerText = "SANITIZING CARE"
+    p1.style.color = "rgb(236,87,76)"
+    p1.style.fontWeight = "bold"
+
+    let p2 = document.createElement("p")
+    p2.innerText = "Sanitizing Wipes"
+
+    let p3 = document.createElement("p")
+    p3.innerText = "Hand Sanitizer"
+
+    let p4 = document.createElement("p")
+    p4.innerText = "Shower Gel"
+
+    let p5 = document.createElement("p")
+    p5.innerText = "Body Moisturizer"
+
+    let p6 = document.createElement("p")
+    p6.innerText = "Soaps"
+
+    let p7 = document.createElement("p")
+    p7.innerText = "Hand Care"
+
+    let p8 = document.createElement("p")
+    p8.innerText = "Foot Care"                        
+
+    let p9 = document.createElement("p")
+    p9.innerText = "Surface Spray"
+
+    let p10 = document.createElement("p")
+    p10.innerText = "Sanitizing Kits"
+
+    let p11 = document.createElement("p")
+    p11.innerText = "Body Spray & Mist"
+
+    let p12 = document.createElement("p")
+    p12.innerText = "Sanitizing Spray"
+
+    let p13 = document.createElement("p")
+    p13.innerText = "Fragrance"
+
+    let div2 = document.createElement("div")
+    div2.style.display = "flex"
+    div2.style.padding = "20px"
+    div2.style.gap = "20px"
+
+    let div3 = document.createElement("div")
+    let img1 = document.createElement("img")
+    img1.src = "https://files.myglamm.com/site-images/400x400/Game-over-Germs_2.jpg"
+    img1.style.width = "200px"
+    img1.style.height = "220px"
+    let h1 = document.createElement("h4")
+    h1.innerText = "Game Over Germs"
+    h1.style.textAlign = "center"
+    let p21 = document.createElement("p")
+    p21.innerText = "10 Sanitizing Wipes + 10 Sanitizing Towel.."
+    p21.style.textAlign = "center"
+    p21.style.fontSize = "14px"
+    let h11 = document.createElement("h4")
+    h11.innerText = "₹299"
+    h11.style.textAlign = "center"
+
+    let div4 = document.createElement("div")
+    let img2 = document.createElement("img")
+    img2.src = "https://files.myglamm.com/site-images/400x400/ULTIMATE-GERM-DEFENCE_5.jpg"
+    img2.style.width = "200px"
+    img2.style.height = "220px"
+    let h2 = document.createElement("h4")
+    h2.innerText = "Ultimate Germ Defence"
+    h2.style.textAlign = "center"
+    let p22 = document.createElement("p")
+    p22.innerText = "35 Sanitizing Wipes + 30 Sanitizing Towel..."
+    p22.style.textAlign = "center"
+    p22.style.fontSize = "14px"
+    let h12 = document.createElement("h4")
+    h12.innerText = "₹1099"
+    h12.style.textAlign = "center"
+
+    let div5 = document.createElement("div")
+    let img3 = document.createElement("img")
+    img3.src = "https://files.myglamm.com/site-images/400x400/Germ-Shield_2.jpg"
+    img3.style.width = "200px"
+    img3.style.height = "220px"
+    let h3 = document.createElement("h4")
+    h3.innerText = "Germ Shield"
+    h3.style.textAlign = "center"
+    let p23 = document.createElement("p")
+    p23.innerText = "25 Sanitizing Wipes + 1 Moisturizing Hand..."
+    p23.style.textAlign = "center"
+    p23.style.fontSize = "14px"
+    let h13 = document.createElement("h4")
+    h13.innerText = "₹299"
+    h13.style.textAlign = "center"
+
+    let div6 = document.createElement("div")
+    let img4 = document.createElement("img")
+    img4.src = "https://files.myglamm.com/site-images/400x400/Lifesaver_2.jpg"
+    img4.style.width = "200px"
+    img4.style.height = "220px"
+    let h4 = document.createElement("h4")
+    h4.innerText = "Life Saver"
+    h4.style.textAlign = "center"
+    let p24 = document.createElement("p")
+    p24.innerText = "20 Sanitizing Wipes + 10 Sanitizing Towel..."
+    p24.style.textAlign = "center"
+    p24.style.fontSize = "14px"
+    let h14 = document.createElement("h3")
+    h14.innerText = "₹449"
+    h14.style.textAlign = "center"
+
+    div1.append(p1, p2, p3, p4, p5, p6, p7,p8,p9,p10,p11,p12,p13)
+
+    div3.append(img1, h1, p21, h11)
+    div4.append(img2, h2, p22, h12)
+    div5.append(img3, h3, p23, h13)
+    div6.append(img4, h4, p24, h14)
+    div2.append(div3, div4, div5, div6)
+
+    div.append(div1, div2)
+    a3.append(div)
+}
+
+document.getElementById("b5").addEventListener("pointerenter", b10)
+
+function b10() {
+
+    a3.innerHTML = null
+
+let div = document.createElement("div")
+div.setAttribute("id", "a5")
+
+let div1 = document.createElement("div")
+// div.setAttribute("id", "a6")
+div1.style.width = "40%"
+div1.style.padding = "10px"
+
+let p1 = document.createElement("p")
+p1.innerText = "SHOP BY COLLECTION"
+p1.style.color = "rgb(236,87,76)"
+p1.style.fontWeight = "bold"
+
+let p2 = document.createElement("p")
+p2.innerText = "MyGlamm"
+
+let p3 = document.createElement("p")
+p3.innerText = "Treat Love Care"
+
+let p4 = document.createElement("p")
+p4.innerText = "Clean Beauty"
+
+let p5 = document.createElement("p")
+p5.innerText = "POPxo"
+
+let p6 = document.createElement("p")
+p6.innerText = "WIPEOUT"
+
+let p7 = document.createElement("p")
+p7.innerText = "GLOW Iridescent Brightening Skincare"
+
+let p8 = document.createElement("p")
+p8.innerText = "Manish Malhotra"                        
+
+let p9 = document.createElement("p")
+p9.innerText = "YOUTHfull"
+
+let p10 = document.createElement("p")
+p10.innerText = "LIT Collection"
+
+let p11 = document.createElement("p")
+p11.innerText = "Body Spray & Mist"
+
+let p12 = document.createElement("p")
+p12.innerText = "Sanitizing Spray"
+
+let p13 = document.createElement("p")
+p13.innerText = "POSE"
+
+let p14 = document.createElement("p")
+p14.innerText = "K.Play"
+
+let p15 = document.createElement("p")
+p15.innerText = "Just Dropped"
+
+let div2 = document.createElement("div")
+div2.style.display = "flex"
+div2.style.padding = "20px"
+div2.style.gap = "20px"
+
+// MyGlamm LIT Creamy Matte Lipstick - Tom Collins
+
+// Precision Perfect Matte Slimstick
+
+let div3 = document.createElement("div")
+let img1 = document.createElement("img")
+img1.src = "https://files.myglamm.com/site-images/400x400/Soiree-(1).jpg"
+img1.style.width = "200px"
+img1.style.height = "220px"
+let h1 = document.createElement("h4")
+h1.innerText = "Manish Malhotra 9 in 1..."
+h1.style.textAlign = "center"
+let p21 = document.createElement("p")
+p21.innerText = "Compact Eyeshadow Palette with 9 shades in..."
+p21.style.textAlign = "center"
+p21.style.fontSize = "14px"
+let h11 = document.createElement("h4")
+h11.innerText = "₹1480"
+h11.style.textAlign = "center"
+
+let div4 = document.createElement("div")
+let img2 = document.createElement("img")
+img2.src = "https://files.myglamm.com/site-images/400x400/GGM-(1).jpg"
+img2.style.width = "200px"
+img2.style.height = "220px"
+let h2 = document.createElement("h4")
+h2.innerText = "Glow to Glamour Shimmer..."
+h2.style.textAlign = "center"
+let p22 = document.createElement("p")
+p22.innerText = "2 in 1 Shimmer and Fixing Powder"
+p22.style.textAlign = "center"
+p22.style.fontSize = "14px"
+let h12 = document.createElement("h4")
+h12.innerText = "₹1195"
+h12.style.textAlign = "center"
+
+let div5 = document.createElement("div")
+let img3 = document.createElement("img")
+img3.src = "https://files.myglamm.com/site-images/400x400/14-Nail-Lacquer-metallic-Post-1-Sheer-Glitz.jpg"
+img3.style.width = "200px"
+img3.style.height = "220px"
+let h3 = document.createElement("h4")
+h3.innerText = "Manish Malhotra Nail..."
+h3.style.textAlign = "center"
+let p23 = document.createElement("p")
+p23.innerText = "Hi-Shine Gel Finish Nail Enamel | Made in Italy"
+p23.style.textAlign = "center"
+p23.style.fontSize = "14px"
+let h13 = document.createElement("h4")
+h13.innerText = "₹315"
+h13.style.textAlign = "center"
+
+let div6 = document.createElement("div")
+let img4 = document.createElement("img")
+img4.src = "https://files.myglamm.com/site-images/400x400/Tom-Collins_6.jpg"
+img4.style.width = "200px"
+img4.style.height = "220px"
+let h4 = document.createElement("h4")
+h4.innerText = "MyGlamm LIT Creamy..."
+h4.style.textAlign = "center"
+let p24 = document.createElement("p")
+p24.innerText = "Precision Perfect Matte Slimstick"
+p24.style.textAlign = "center"
+p24.style.fontSize = "14px"
+let h14 = document.createElement("h3")
+h14.innerText = "₹595"
+h14.style.textAlign = "center"
+
+div1.append(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15 )
+
+div3.append(img1, h1, p21, h11)
+div4.append(img2, h2, p22, h12)
+div5.append(img3, h3, p23, h13)
+div6.append(img4, h4, p24, h14)
+div2.append(div3, div4, div5, div6)
+
+div.append(div1, div2)
+a3.append(div)
+}
+
+document.getElementById("b").addEventListener("pointerenter", b11)
+
+document.getElementById("b6").addEventListener("pointerenter", b11)
+
+document.getElementById("b8").addEventListener("pointerenter", b11)
+
+document.getElementById("a3").addEventListener("pointerleave", b11)
+
+function b11() {
+    a3.innerHTML = null
+}
+
+function rewardFunc(){
+    location.href = "reward.html"
+}
+
+function offerFunc(){
+location.href = "offer.html"
+}
+
+function makeupFunc(){
+    location.href = "makeup.html"
+}
+
+function skincareFunc(){
+    location.href = "skincare.html"
+}
+
+function studioFunc(){
+    location.href = "studio.html"
+}
+
+// let log = document.getElementById("login")
+
+function login(){
+    // console.log("hi")
+    location.href="login.html"
+    log.setAttribute("id","visible")
+}
+
+document.getElementById("continueButton").addEventListener("click",function(){
+        let input = document.getElementById("mobileInput").value
+        if(input.length>10 || input.length<10)
+        {alert("Invalid Number")
+         document.getElementById("mobileInput").textContent=""}
+         else
+         {window.location.href="otp.html"}
+    })
+
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/productArrange.css">
+    <link rel="stylesheet" href="/styles/stratingBox.css">
+</head>
+<body>
+    <div id="glamourContainer">
+        <h3>Home / Presenting, THE MATTEST MATTE LIQUID LIPSTICK</h3>
+        <hr>
+        <section>
+            <div id="imageContainerSecB">
+                <div id="left">
+                    <img src="https://files.myglamm.com/site-images/400x400/1200x1200-collection-page.jpg" alt="manish_malhotra">
+                </div>
+                <div id="right">
+                    <div id="rightContent"> 
+                        <h2> Presenting, THE MATTEST MATTE LIQUID LIPSTICK</h2>
+                         <p>MyGlamm Ultimatte Long-Stay Matte Liquid Lipstick - Supremely matte liquid lip colour infused with Vitamin E for a transformative pout that stays all day long.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <h1><strong>PRODUCT</strong></h1>
+        <div id="glamourData"></div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import {appendData} from "./scripts/appendForSecB.js"
+
+    let glamourData = JSON.parse(localStorage.getItem("liquidLipstickProduct"))
+    let parent = document.getElementById("glamourData")
+
+    appendData(glamourData,parent)
+</script>
+<script src="/scripts/liquidLipstick.js"></script>

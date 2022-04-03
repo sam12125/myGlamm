@@ -1,0 +1,202 @@
+body{
+    background: #F4F4F4;
+    font-family: din-2014,sans-serif;
+}
+
+#container{
+    /* width: 70%; */
+  background-color: white;
+    margin: auto;
+}
+
+
+#Bsell {
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 8%;
+    
+    /* border: 1px solid; */
+}
+#Bsell div {
+    /* width: 90%; */
+    /* height: 100%; */
+    margin: auto;
+    text-align: center;
+   
+    
+
+}
+.row > div {
+    width: 90%;
+    /* height: 100%; */
+    border-radius: 2%;
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fff;
+    
+    
+}
+
+.row div div {
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.row > div > div > img{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+
+.row div div div {
+    display: block;
+    height: 20%;
+}
+
+#poster{
+    width: 70%;
+    height: 280.67px;
+    margin: auto;
+}
+#poster > img {
+    width: 100%;
+    margin: auto;
+}
+
+#Scate{
+    width: 70%;
+    margin: 2% 20% 0px 15%;
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: space-between;
+    
+}
+.heading{
+    text-align: center;
+    height: 12%;
+    width: 70%;
+    font-family: sans-serif;
+    margin: auto;
+    /* border: 1px solid; */
+    margin-top: 12%;
+}
+
+.heading h1{
+    border: 1px solid;
+    height: 10%;
+    width: 17%;
+    /* font-size:24px ; */
+    margin: auto;
+    background: #F2B5B5;
+}
+
+#Scate div {
+    /* display: flex; */
+     /* justify-content: space-between; */
+    border-radius: 50%;
+    /* border: 1px solid ; */
+    box-sizing: border-box;
+   
+}
+#Scate div img{
+    /* width: 95%; */
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: auto;
+}
+
+/* styling for studio  */
+/* #container{
+background: rgb(177, 174, 174);
+} */
+
+.poster{
+    width: 99%;
+    margin: auto;
+    padding-top: 10px;
+}
+.poster img {
+    width: 100%;
+}
+
+
+/* for slick slider */
+.main {
+    margin: auto;
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.hedings {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid; */
+    justify-content: space-between;
+}
+
+.heding p{
+    font-size: 16px;
+}
+.fisrt {
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+/* .fisrt > div{ */
+    /* box-sizing: border-box; */
+    /* margin-left: 10px; */
+
+     /* border: 1px solid;} */
+
+.imgd{
+    width:360px ;
+    height: 160px;
+    box-sizing: border-box;
+    padding-left: 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.imgd img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color:black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+    margin-right: -30px;
+    margin-left: -30px;
+    }
+
+
+p{
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <style>
+        /* *{
+            font-family: sans-serif;
+        } */
+        .skincareheading{
+            background-image: linear-gradient(180deg,rgb(255, 250, 250),rgb(236, 111, 111));
+            margin:auto;
+            width:20%;
+            height: 40px;
+            text-align: center;
+        }
+        
+        #mainbox{
+            display:grid;
+            grid-template-rows: repeat(7,510px);
+            grid-template-columns: repeat(3,400px);
+            justify-content: center;
+        }
+        #rowpage img:hover{
+             transform:scale(1.1);
+             z-index: 1;
+             cursor:pointer;
+        }
+        #mainbox>div{
+            /* border:1px solid black; */
+            margin:30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        }
+        #rowpage img{
+            width:90%;
+            height:50%;
+            margin:20px auto auto 15px;
+        }
+        #rowpage h3,h4,p{
+            margin-left: 12px;
+        }
+        #makeupproductDiv{
+    text-align:center;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+    <div id="makeupproductDiv">
+        <!-- <hr id="makeupproductDiv1"> -->
+            <p style="font-size: 15px;">HOME/<strong>SKINCARE</strong></p>
+            <hr></hr>
+        </div>
+    <div class="skincareheading"><h1 >SKINCARE</h1></div>
+    <div id="mainbox" >
+    <div id="rowpage" onclick="afterClick()">
+        <img src="https://files.myglamm.com/site-images/800x800/Artboard-1-3.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS AVOCADO & ALOE EYE CREAM</h3>
+        <a></a>
+        <p>Soothing, Nourishing Antioxidant-rich Eye Cream</p>
+        <h4>₹ 375</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Facewash_3.jpg" alt="">
+        <h3>MYGLAMM WIPEOUT GERM KILLING FACE WASH</h3>
+        <p>Tea Tree Oil & Vitamin E-infused Face Wash</p>
+        <h4>₹ 119</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/BRSGt-(1).jpg" alt="">
+        <h3>MYGLAMM K.PLAY MANDARIN BRIGHTENING SHEET MASK</h3>
+        <p>Mandarin-infused Brightening Sheet Mask</p>
+        <h4>₹ 145</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/1-(1)_3.jpg" alt="">
+        <h3>GLOW IRIDESCENT BRIGHTENING SHEET MASK</h3>
+        <p>Rosehip Oil-infused Brightening Sheet Mask</p>
+        <h4>₹ 199</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/VFFD-(1).jpg" alt="">
+        <h3>MYGLAMM WIPEOUT GERM KILLING FACE SCRUB - ROSE & HONEY</h3>
+        <p>Rose & Honey Infused Germ-killing & Purifying Face scrub</p>
+        <h4>₹ 129</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/LLVB-(1).jpg" alt="">
+        <h3>MYGLAMM WIPEOUT GERM KILLING FACE SCRUB - LAVENDER & NEEM</h3>
+        <p>Lavender & Neem Infused Purifying Face scrub</p>
+        <h4>₹ 129</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/16-Kesar-Face-Pack-Gel-Post-1-01.jpg" alt="">
+        <h3>MANISH MALHOTRA KESAR FACE PACK GEL</h3>
+        <p>Gel-based Natural Face Pack</p>
+        <h4>₹ 945</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/BRGTES-(1).jpg" alt="">
+        <h3>GLOW IRIDESCENT BRIGHTENING ESSENCE</h3>
+        <p>GLOW IRIDESCENT BRIGHTENING ESSENCE</p>
+        <h4>₹ 1195</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/MSTCRM-(1).jpg" alt="">
+        <h3>GLOW IRIDESCENT BRIGHTENING MOISTURISING CREAM</h3>
+        <p>Rosehip Oil-infused Daily Moisturising Cream</p>
+        <h4>₹ 1595</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/13-Sheet-Mask-post-1-Sandalwood-&-Saffron.jpg" alt="">
+        <h3>MANISH MALHOTRA SANDALWOOD & SAFFRON SHEET MASK</h3>
+        <p>Brightening Sheet Mask made with Bamboo Fibers for glowing, clear skin</p>
+        <h4>₹ 249</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Product-shot-01_2.jpg" alt="">
+        <h3>MYGLAMM 3% HYALURONIC ACID HYDRATING SERUM ENRICHED WITH KAKADU PLUM</h3>
+        <p>Clinically Tested, Highly Concentrated Face Serum.</p>
+        <h4>₹ 699</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Blueberry---Strawberry-Face-Cream-1_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS BLUEBERRY & STRAWBERRY FACE CREAM 50G</h3>
+        <p>Brightening & hydrating face cream with natural extracts from natural superfoods</p>
+        <h4>₹ 399</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Blueberry---Strawberry-Face-Cream-1_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS BLUEBERRY & STRAWBERRY FACE CREAM 50G</h3>
+        <p>Brightening & hydrating face cream with natural extracts from natural superfoods</p>
+        <h4>₹ 399</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Kiwi---Coconut-Sunscreen-1_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS KIWI & COCONUT SUNSCREEN 50ML</h3>
+        <p>Broad-spectrum, lightweight & non-greasy sunscreen with SPF 30 PA+++</p>
+        <h4>₹ 499</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/DDCF-(1)_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS CACAO & BERRIES DAY CREAM WITH SPF - 50G</h3>
+        <p>Nourishing & Protecting Day Cream With SPF</p>
+        <h4>₹ 399</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/23-Tulsi-Cleansing-Foam-Gel-Post-1-01.jpg" alt="">
+        <h3>MANISH MALHOTRA TULSI CLEANSING FOAM GEL</h3>
+        <p>Soothing, Nourishing Antioxidant-rich Eye Cream</p>
+        <h4>₹ 895</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/FCCD-(1)_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS CACAO & BERRY FACE WASH - 100G</h3>
+        <p>Nourishing & Brightening Face Cleanser</p>
+        <h4>₹ 299</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/BBL-(1).jpg" alt="">
+        <h3>GLOW IRIDESCENT BRIGHTENING BODY LOTION</h3>
+        <p>Rosehip Oil-infused Illuminating Body Lotion</p>
+        <h4>₹ 1095</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Product-shot-01_3.jpg" alt="">
+        <h3>MYGLAMM YOUTHFULL HYDRATING SLEEPING MASK WITH WATER BANK TECHNOLOGY</h3>
+        <p>Soothing, Nourishing Antioxidant-rich Eye Cream</p>
+        <h4>₹ 1195</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/22-Haldi-Eye-Gel-post-1-01.jpg" alt="">
+        <h3>MYGLAMM WIPEOUT HYDRATED SKIN TRIO</h3>
+        <p>Face Wash, Soap and Body Spray Combo</p>
+        <h4>₹ 186</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Watermelon---Raspberry-Face-Wash-1_1.jpg" alt="">
+        <h3>MYGLAMM SUPERFOODS WATERMELON & RASPBERRY FACE WASH 120ML</h3>
+        <p>Hydrating & Brightening Facial Cleanser</p>
+        <h4>₹ 299</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/Body-&-Face-Wash-&-Cleansing-Towel-.jpg" alt="">
+        <h3>MYGLAMM WIPEOUT OIL & ACNE FREE SUMMER DUO</h3>
+        <p>Body Wash and Face Wash Combo</p>
+        <h4>₹ 176</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/1-(1)-3_1.jpg" alt="">
+        <h3>MYGLAMM WIPEOUT HYDRATED SKIN TRIO</h3>
+        <p>Face Wash, Soap and Body Spray Combo</p>
+        <h4>₹ 199</h4>
+    </div>
+    <div id="rowpage">
+        <img src="https://files.myglamm.com/site-images/800x800/SUPERFOODS-Strawberry-&-Blueberry-Face-Cream-SUPERFOODS-Blueberry-&-Kakadu-Plum-Sleeping-Mask.jpg" alt="">
+        <h3>SUPERCHARGED SKIN - FACE CREAM & SLEEPING MASK COMBO</h3>
+        <p>This Superfoods Thai duo will help you charge your face and give you a natural radiance like never before.
+        </p>
+        <h4>₹ 699</h4>
+    </div>
+    
+</div>
+<div id="foot"></div>
+</body>
+</html>
+
+<script type="module">
+
+    import  navbar  from "./navbar.js"
+        console.log(navbar)
+    
+        let navb = document.getElementById("nav")
+        navb.innerHTML = navbar()
+    
+        import footer from "./footer.js"
+        console.log(footer)
+    
+        let foot = document.getElementById("foot")
+        foot.innerHTML = footer()
+    
+    </script>
+
+    <script>
+
+        function afterClick(){
+            location.href = "productDescription.html"
+        }
+    </script>

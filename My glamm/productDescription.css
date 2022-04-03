@@ -1,0 +1,140 @@
+.hideScroll1{
+    height:300px;
+    width:80px;
+    overflow: hidden;
+    padding-right: -50px;
+}
+.hideScroll2{
+    
+    height:700px;
+    width:950px;
+    overflow:hidden;
+    
+}
+#productDecriptionDiv{
+    display:grid;
+    grid-template-columns:450px 20px;
+    /* border:1px solid blue; */
+    padding:0px 0px 0px 45px;
+    margin-top: 30px;
+    
+}
+#productDecriptionDiv1{
+    display:grid;
+    /* border:1px solid black; */
+    grid-template-columns: repeat(2,1fr);
+}
+#productDecriptionDiv2{
+    overflow-y:scroll;
+    height:700px;
+    width:965px;
+    /* border:1px solid red; */
+    
+}
+.thumbnails{
+    display:grid;
+    height:300px;
+    width:90px;
+    overflow-y:scroll;
+    margin-left:10px;
+    overflow-x:hidden;
+    /* margin-top: 40px; */
+}
+.img1{
+    height:60px;
+    
+}
+/* body {
+	font-family: verdana;
+	color: #121212;
+	background: #ffffff;
+} */
+
+#image-slider {
+	display: block;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	background: #fff;
+}
+#image-slider ul {
+	list-style: none;
+}
+#image-slider ul img {
+	width: 100%;
+	max-width: 330px;
+	height: 320px;
+    margin-left:-30px
+}
+
+.img-up {
+	margin-top: -300px;
+}
+button>img{
+    height:15px
+}
+#bagButton{
+    /* background-color: black; */
+    color:white;
+}
+#reviewButton{
+    background-color: black;
+    color:white;
+}
+#bordertext>p{
+    background-color:
+#f4f4f4;
+    width:60%
+}
+.flexDiv{
+    display:flex;
+}
+#reviewButton:hover{
+color:grey;
+}
+.detailReview{
+    display:flex;
+    justify-content:space-between;
+}
+.detailReview1{
+    display:flex;
+}
+.detailReview1>p:nth-child(2){
+    margin-bottom:18px;
+}
+button:focus{
+    border-color: #ffa0a8;
+    color:#ffa0a8;
+}
+.star{
+    color:#ffa0a8;
+}
+.font12{
+    font-size:12px;
+}
+.font14{
+    font-size: 14px;
+}
+.font16{
+    font-size: 16px;
+}
+.font18{
+    font-size: 18px;
+}
+.flexDiv12{
+    display:flex;
+    justify-content:space-between;
+}
+.flexDiv13{
+    display:flex;
+}
+.flexDiv13>img{
+    height:25px;
+    margin:15px 0px 0px 20px;
+}
+#centerText{
+    text-align:center;
+}
+#question{
+    text-align:center;
+}

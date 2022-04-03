@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMOUR ON THE GO</title>
+    <link rel="stylesheet" href="/styles/productArrange.css">
+    <link rel="stylesheet" href="/styles/stratingBox.css">
+</head>
+<body>
+    <div id="glamourContainer">
+        <h3>Home / GLAMOUR ON THE GO</h3>
+        <section>
+            <div id="imageContainerSecB">
+                <div id="left">
+                    <img src="https://files.myglamm.com/site-images/400x400/Pouch-1200_1.jpg" alt="manish_malhotra">
+                </div>
+                <div style="height:175.86px" id="right">
+                    <div id="rightContent"> 
+                        <h1 style="font-size: 40px;">GLAMOUR ON THE GO</h1>
+                         <p> Take show-stopping beauty with you, wherever you go. Get an exclusive Manish Malhotra pouch free with couture beauty combos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <h1><strong>PRODUCT</strong></h1>
+
+        <div id="glamourData"></div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import {appendData} from "./scripts/appendForSecB.js"
+
+    let glamourData = JSON.parse(localStorage.getItem("glamourOnTheGo"))
+    let parent = document.getElementById("glamourData")
+
+    appendData(glamourData,parent)
+</script>
+<script src="/scripts/glamouronthego.js"></script>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+    <style>
+                #PaymentContainer{
+            display:flex;
+            justify-content: center;
+             
+        }
+        #PaymentContainer>div{
+            /* height:540px; */
+            width:15%;
+            /* border:1px solid black */
+        }
+        #PaymentContainer>div:last-child{
+            height:440px;
+            width:40%;
+            padding-left: 20px;
+        }
+        #PaymentLeft>p{
+            height:25px;
+            width:80%;
+            border:none;
+        }
+        #amountShow{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(219, 212, 212);
+
+        }
+        #form input{
+            width:60%;
+            height:30px;
+            margin: 10px 10px 10px 50px
+        }
+        select{
+            width:20%;
+            height:30px;
+        }
+        #monthsec{
+            margin-left:10px
+        }
+        #yearsec{
+            margin-right:80px
+        }
+        #form>input:last-child{
+            margin:50px 0px 0px 90px;
+            background-color: black;
+            color:white
+        }
+        #amountShow{
+            padding:0px 10px
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+    <h2 style="text-align:center;margin-top: 70px;">Payment</h2>
+    <div id="PaymentContainer">
+        <div id="PaymentLeft">
+            <h3>PAYMENT METHOD</h3>
+            <p style="border-right:2px solid aqua;height:30px;padding-top:5px;background:rgb(208, 247, 247)">Credit or Debit Card</p>
+            <p>Net Banking</p>
+            <p>UPI</p>
+            <p>Wallets</p>
+            <p>Cash on Delivery</p>
+        </div>
+        <div id="PaymentRight">
+            <div id="amountShow">
+                <h3>Amount Payable</h3>
+                <p id="amountpayable">₹ 480</p>
+            </div>
+            <h2>Card Details</h2>
+            <div>
+                <form id="form">
+                    
+                    <label>Card Number</label>
+                    <input id="cardnumber" type="number" placeholder="XXXX-XXXX-XXXX-XXXX" style="margin-left:85px;" /><br>
+                    <label>Cardholder’s Name </label>
+                    <input id="name" type="text" placeholder="eg, himanshu singh" /><br>
+                    <div id="dateDetails">
+                        <label for="validity">VALIDITY</label>
+                        <select class="expiry" id="monthsec">
+                          <option value="Expiry YY">Expiry MM</option>
+                          <option value="Expiry YY">1</option>
+                          <option value="Expiry YY">2</option>
+                          <option value="Expiry YY">3</option>
+                          <option value="Expiry YY">4</option>
+                          <option value="Expiry YY">5</option>
+                          <option value="Expiry YY">6</option>
+                          <option value="Expiry YY">7</option>
+                          <option value="Expiry YY">8</option>
+                          <option value="Expiry YY">9</option>
+                          <option value="Expiry YY">10</option>
+                          <option value="Expiry YY">11</option>
+                          <option value="Expiry YY">12</option>
+                        </select>
+          
+                        <select class="expiry" name="" id="yearsec">
+                          <option value="Expiry YY">Expiry YY</option>
+                          <option value="Expiry YY">2022</option>
+                          <option value="Expiry YY">2023</option>
+                          <option value="Expiry YY">2024</option>
+                          <option value="Expiry YY">2025</option>
+                          <option value="Expiry YY">2026</option>
+                          <option value="Expiry YY">2027</option>
+                          <option value="Expiry YY">2028</option>
+                          <option value="Expiry YY">2029</option>
+                          <option value="Expiry YY">2030</option>
+                          <option value="Expiry YY">2031</option>
+                          <option value="Expiry YY">2032</option>
+                          <option value="Expiry YY">2033</option>
+                          <option value="Expiry YY">2034</option>
+                          <option value="Expiry YY">2035</option>
+                        </select>
+          
+                        <input id="cvv" type="password" placeholder="CVV" style="width:5%;height:24px" />
+                      </div>
+
+                    <input id="submit" type="submit" value="Proceed to Pay"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+</body>
+</html>
+<script>
+    let amtPay = localStorage.getItem("amountPay")
+    if(amtPay!=null)
+    {document.getElementById("amountpayable").innerText = "₹ "+amtPay;}
+
+    document.getElementById("form").addEventListener("submit",shoppingEnd)
+
+    function shoppingEnd(event){
+        event.preventDefault();
+     var cardnumber= document.querySelector("#cardnumber").value;
+     var cvv= document.querySelector("#cvv").value;
+     var name= document.querySelector("#name").value;
+     if(cardnumber=="" && cvv==""){
+         alert("Incorect Details");
+     }else{
+         alert("Payment Successful")
+        window.location.href="confirmationPage.html";
+     }
+    }
+</script>
+
+<script type="module">
+
+    import  navbar  from "./navbar.js"
+        console.log(navbar)
+    
+        let navb = document.getElementById("nav")
+        navb.innerHTML = navbar()
+    
+        import footer from "./footer.js"
+        console.log(footer)
+    
+        let foot = document.getElementById("foot")
+        foot.innerHTML = footer()
+    
+    </script>
