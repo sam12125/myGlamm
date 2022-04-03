@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <style>
+        #box{
+            width: 70%;
+            box-sizing: border-box;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            text-align: center;
+            padding: 2%;
+            font-family: sans-serif;
+            font-size: 22px ;
+            font-weight: bold;
+        }
+        #first{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input{
+           
+             display: block;
+             background: #F7F7F7;
+             height: 40px;
+             width: 190px;
+             padding: 6px 12px;
+             font-size:medium;
+             margin-top: 15px;
+        }
+        
+        button{
+            height: 50px;
+             width: 140px;
+             padding: 6px 12px;
+             margin-top: 15px;
+             font-size: large;
+             font-weight: bold;
+        }
+
+        select{
+            height: 53px;
+             width: 220px;
+             margin-top: 15px;
+             font-size: medium;
+             background: #F7F7F7;
+        }
+        #name {
+             display: block;
+             height: 40px;
+             width: 290px;
+        }
+        #no{
+            height: 40px;
+             width: 177px;
+        }
+        #mail{
+            height: 40px;
+             width: 290px;
+        }
+       
+      #second{
+        width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+      }
+      #third{
+        width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+      }
+
+      #check{
+          width: 90%;
+          display: flex;
+          justify-content: right;
+
+      }
+      check div{
+          width: 20%;
+          display: flex;
+          justify-content: space-between;
+      }
+          #check input {
+              height: 25px;
+              width:25px;
+      }
+     
+      #btns{
+          width: 90%;
+          display: flex;
+          justify-content: right;
+      }
+      #label{
+          display: flex;
+          box-sizing: border-box;
+          font-size: medium;
+          justify-content: space-between;
+          /* position: absolute; */
+          /* transform: translate(-50%,-50%); */
+          text-align: center;
+      }
+      
+
+      #label > div{
+          padding: 20px 0px 5px 0px;
+      }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Shipping Address</p>
+        <hr>
+        <div id="first">
+           <input id="name" type="text" placeholder="Name*">
+           <input id="no" type="number" placeholder="Number*">
+           <input id="mail" type="email" placeholder="Email*">
+        </div>
+
+        <div id="second">
+            <select  id="type">
+                <option value="Other">Other</option>
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+            </select>
+            <input id="flat" type="text" placeholder="Flat no./House no./ Apt Name*">
+            <input id="street" type="text" placeholder="Street Name*">
+            <input id="neigh" type="text" placeholder="Neighbourhood*">
+        </div>
+        
+        <div id="third">
+            <input id="pin" type="number" placeholder="Pincode">
+            <input id="city" type="text" placeholder="City">
+            <input id="state" type="text" placeholder="State">
+            <input id="land" type="text" placeholder="Landmark">
+        </div>
+
+        <div id="check">
+           <div>
+          <div id="label">
+            <input type="checkbox">
+            <div><label for="">Mark as default</label></div>
+          </div>
+           
+           </div>
+        </div>
+
+        <div id="btns">
+          <div>
+            <button onclick="previous()">BACK</button>
+            <button onclick="next()">CONTINUE</button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // back button function  
+    
+    const previous = () => {
+    window.location.href="";
+}
+
+
+// continue button function 
+
+const next = () => {
+
+
+    let addarr = JSON.parse(localStorage.getItem("address")) || [];
+
+    let name = document.getElementById("name").value;
+    let numb = document.getElementById("no").value;
+    let mail = document.getElementById("mail").value;
+    let flat = document.getElementById("flat").value;
+    let street = document.getElementById("street").value;
+    let neigh = document.getElementById("neigh").value;
+    let pin = document.getElementById("pin").value;
+    let city = document.getElementById("city").value;
+    let state = document.getElementById("state").value;
+    let land = document.getElementById("land").value;
+    let type = document.getElementById("type").value;
+    // console.log(type)
+    // let addobj ={};
+  let  addobj={name,numb,mail,type,flat,street,neigh,pin,city,state,land};
+    addarr.push(addobj);
+
+    localStorage.setItem("address",JSON.stringify(addarr));
+
+    // redirecting to another page 
+    window.location.href=""
+}
+</script>
