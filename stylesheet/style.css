@@ -187,3 +187,19 @@ p{
     font-size: 12px;
     text-align: center;
 }
+
+.slick-next:before, .slick-prev:before {
+font-family: slick;
+font-size: 40px;
+line-height: 0;
+opacity: .90;
+/* margin-right: 5px; */
+color:black;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+button{
+margin-right:-30px;
+margin-left: -30px;
+}
+
