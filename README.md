@@ -1,34 +1,43 @@
-We had to clone the Dermstore website. Basically, it’s a E-commers site where peoples buy their products related to Skin Care. We have tried to clone the pixel perfect website with the help of JavaScript, React and Redux and for merging we use GitHub.
+# MyGlamm-Clone-Website-
+
+Project: Make a clone of https://www.myglamm.com/ site
+
+This is an E-Commerce website which is a direct to consumer beauty brands that offers online beauty products.
+
+<h3>Technology Stack Used:<h3> 
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
 
 Click on the link to view the project:- https://taupe-alfajores-6c25cc.netlify.app/
 HOME PAGE :-
 This is the main landing page of our website. Here we can see all the products and information related to the specified product. We have created user friendly navbar as well. You have options to go to Login or Register page, Cart Page, Category that helps you to select product of your choice and search bar.
 
-
+ ![image](https://user-images.githubusercontent.com/99639007/171352748-68c11c1f-3e1d-452d-8e24-ae033e211080.png)
 
 
 Signup/Login Page :-
 After clicking on Register Button, you will be redirect to Sign Up page on this page user can create account with his/her name, Email and Password. After completing this if user click on Continue button page will redirect to Login Page, now user only have to put his Email and Password and click on Log In button and user will be redirected to Main Home Page.
 
 
-Signup page
+![image](https://user-images.githubusercontent.com/99639007/171854622-b42d7600-4c73-4022-bddd-fd39f0a8790f.png)
 
-
-
-
-Login page
 
 
 
 Footer :-
 This is how out footer look like, user get so many options to explore related to the product and the company.
 
+![image](https://user-images.githubusercontent.com/99639007/171856332-6c0d65e9-5f39-4ab1-aeea-861030ca05fb.png)
 
 
 
-Haircare page:-
+Product page:-
 This is our Quick Buy Button, by clicking to this button, the product will be added to the cart automatically. User can check or change by opening the cart icon.
 
+![image](https://user-images.githubusercontent.com/99639007/171855786-0e22c246-e2f1-4aaa-9688-e48765ebe1e4.png)
 
 
 
@@ -37,15 +46,17 @@ Now click on any product [Quick Buy] then the page will be redirected to user’
 
 User can select the quantity as well by clicking on the buttons. Final product will be added accordingly.
 
+![image](https://user-images.githubusercontent.com/99639007/171856751-11ae6004-4685-45f4-b2cf-8c7cc687e6c1.png)
 
 
 
 
 Checkout/payment page:-
 Now click on checkout button this cart page redirect to Payment gateway page
-
 fill all require details by filling your name, address, contact no. Now, it’s time to fill the payment method- Card.
 
+![image](https://user-images.githubusercontent.com/99639007/171856515-1d1fe108-ca88-4996-a968-d5de1630aa0a.png)
+![image](https://user-images.githubusercontent.com/99639007/171856618-4bfbbfd3-8123-4914-b788-777ecde1274f.png)
 
 
 
