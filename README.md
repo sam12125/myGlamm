@@ -11,7 +11,7 @@ This is an E-Commerce website which is a direct to consumer beauty brands that o
     <li>JavaScript</li>
   </ul>
 
-Click on the link to view the project:- https://taupe-alfajores-6c25cc.netlify.app/
+  Click on the link to view the project:- https://taupe-alfajores-6c25cc.netlify.app/ </br>
 HOME PAGE :-
 This is the main landing page of our website. Here we can see all the products and information related to the specified product. We have created user friendly navbar as well. You have options to go to Login or Register page, Cart Page, Category that helps you to select product of your choice and search bar.
 
